@@ -267,7 +267,7 @@ color:  var(--azulOscuro);
 
 .imgPlatziContainer{
    width: 200px;
-   overflow: hidden;
+   /* overflow: hidden; */
 }
 
 .imgPlatzi {
@@ -288,6 +288,9 @@ color:  var(--azulOscuro);
 
 /* ------------------------ interest section  */
 
+.interestDetails {
+    display: none;
+}
 .musicaContainer{
     display: flex;
     /* border: solid 1px ; */
