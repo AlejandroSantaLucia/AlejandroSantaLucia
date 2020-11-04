@@ -290,11 +290,24 @@ color:  var(--azulOscuro);
 
 .musicaContainer{
     display: flex;
-    border: solid 1px ;
+    /* border: solid 1px ; */
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10% 10% 0 10%;
+}
+
+.musicaTextContainer{
+    width: 50%;
+    padding-right: 10px;
+    text-align: end;
+}
+
+.musicaTitle{
+    color: var(--azulOscuro);
 }
 
 .musicaImgContainer {
-    width: 50%
+    width: 320px
 }
 
 .musicaImg{
@@ -302,18 +315,92 @@ color:  var(--azulOscuro);
 
 }
 
+/* ----- */
 
 .yogaContainer {
     display: flex;
-    border: solid 1px ;
+    /* border: solid 1px ; */
+    align-items: center;
+   
    
 }
 
 .yogaImgContainer {
-    width: 50%
+    width: 400px
+
 }
 
 .yogaImg{
     width: 100%;
 
+}
+
+.yogaTextContainer {
+    width: 40%;
+}
+
+.yogaTitle{
+    color: var(--azulOscuro);
+}
+
+/* ------- */
+
+.paisesContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%
+}
+
+.paisesTextContainer{
+    width: 40%;
+    text-align: end;
+    padding:10px;
+}
+.viajarTitle{
+    color: var(--azulOscuro);
+}
+
+.titleContinentContainer {
+    cursor: pointer;
+    display: flex;
+    background-color: #3F3D56;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 100px;
+    color: white;
+    min-width: 240px;
+}
+.titleContinentContainer:hover {
+    opacity: .8;
+}
+
+.roundTitlePais {
+    border-radius: 50%;
+    background-color: var(--verdeMedio);
+    width: 30px;
+    height: 30px;
+    padding: -50px;
+
+}
+.roundRellenoPais {
+    border-radius: 50%;
+    background-color: var(--azulOscuro);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.continente{
+
+}
+
+
+.banderasContainer {
+    display: none;
 }
