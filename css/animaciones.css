@@ -1,0 +1,16 @@
+.slidein {
+    animation-duration: 1s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-top: -100%;
+      /* width: 300% */
+    }
+  
+    to {
+      margin-top: 0%;
+      /* width: 100%; */
+    }
+  }
