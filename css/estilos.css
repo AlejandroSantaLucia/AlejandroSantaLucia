@@ -290,6 +290,8 @@ color:  var(--azulOscuro);
 
 .interestDetails {
     display: none;
+    background-image: url("../imagenes/backgroundTriple.png");
+    
 }
 .musicaContainer{
     display: flex;
@@ -350,7 +352,7 @@ color:  var(--azulOscuro);
 
 .paisesContainer{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     padding: 10%
 }
@@ -406,4 +408,10 @@ color:  var(--azulOscuro);
 
 .banderasContainer {
     display: none;
+    
+    }
+
+.bandera {
+    width: 200px;
+    margin: 0 auto;
 }
