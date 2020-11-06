@@ -14,3 +14,24 @@
       /* width: 100%; */
     }
   }
+
+  .slideinDetails {
+    animation-duration: 1s;
+    animation-name: slideinDetails;
+    position: relative;
+    
+  }
+  
+  @keyframes slideinDetails {
+    from {
+      margin-top: -100%;
+      opacity: 0;
+      /* width: 300% */
+    }
+  
+    to {
+      margin-top: 0%;
+      opacity: 1;
+      /* width: 100%; */
+    }
+  }
