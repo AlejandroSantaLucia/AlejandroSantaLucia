@@ -70,9 +70,13 @@ header nav li {
 }
 .hero h1 {
     max-width: 50%;
-    font-size: 3rem;
+    font-size: 3.5rem;
     padding: 40px 0px 0px 20px;
     background-color: transparent;
+}
+
+.hero h1 span {
+ color: var(--verdeFuerte);
 }
 
 h1  {
@@ -243,6 +247,7 @@ color:  var(--azulOscuro);
 .studiesDetails {
     background-color: aliceblue;
     display: none;
+    
     z-index: 1;
 }
 
@@ -423,4 +428,18 @@ color:  var(--azulOscuro);
 .bandera {
     width: 200px;
     margin: 0 auto;
+}
+
+
+
+
+
+footer {
+  
+    padding: 10px 20px;
+    justify-content: space-between;
+    background-color: var(--azulOscuro);
+    align-items: center;
+    height: 100px;
+
 }
