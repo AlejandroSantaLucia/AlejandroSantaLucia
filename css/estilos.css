@@ -59,6 +59,10 @@ header nav li {
     border: solid 1px green
 }
 
+
+
+/* ----------------------------------------- hero */
+
 .hero   {
     background-image: url("../imagenes/hero1.png");
     background-repeat: no-repeat;
@@ -80,6 +84,10 @@ header nav li {
 
 .hero h1 span {
  color: var(--verdeFuerte);
+}
+
+.heroImgContainer{
+    display: none;
 }
 
 h1  {
@@ -120,8 +128,7 @@ h1  {
     background-color: var(--verdeMedio);
     width: 70px;
     height: 70px;
-    padding: -50px;
-
+ 
 }
 .roundRelleno{
     border-radius: 50%;
