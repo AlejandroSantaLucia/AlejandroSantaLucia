@@ -32,12 +32,11 @@
 
     </section>
 
-    <section class="aboutMe">
-       
-        <div class="titleContainer" onclick="muestra_ocultaGrid('aboutMeDetails')">
+    <section class="aboutMe">       
+        <div class="titleContainer" id="titleContainer1" onclick="muestra_oculta('aboutMeDetails')">
             <div class="roundTitle"> </div>
             <h1 class="aboutMeTitle" >UN POCO SOBRE MI</h1>
-            <div class="roundRelleno"> (+)</div>
+            <div class="roundRelleno icon-plus" id="roundRelleno"></div>
         </div>
         <div class="aboutMeDetails details slideinDetails" id="aboutMeDetails">
             <figure class="aboutMeImgContainer">
@@ -51,8 +50,8 @@
     </section>
 
     <section class="Experience">
-        <div class="titleContainer" onclick="muestra_ocultaBlock('experienceDetails')">
-            <div class="roundRelleno"> (+)</div>
+        <div class="titleContainer" id="titleContainer2" onclick="muestra_oculta('experienceDetails')">
+            <div class="roundRelleno icon-plus" id="roundRelleno2"></div>
             <h1 class="aboutMeTitle title" >EXPERIENCIA LABORAL</h1>
             <div class="roundTitle"> </div>
         </div>
@@ -204,10 +203,10 @@
     </section>
 
     <section class="studies">
-        <div class="titleContainer" onclick="muestra_ocultaBlock('studiesDetails')">
+        <div class="titleContainer" id="titleContainer3" onclick="muestra_oculta('studiesDetails')">
             <div class="roundTitle"> </div>
             <h1 class="studiesTitle title" >ESTUDIOS</h1>
-            <div class="roundRelleno"> (+) </div>
+            <div class="roundRelleno icon-plus" id="roundRelleno3"></div>
         </div>
         <div class="studiesDetails details slideinDetails" id="studiesDetails">
             <div class="unlaContainer">
@@ -256,8 +255,8 @@
     </section>
 
     <section class="interest">
-        <div class="titleContainer" onclick="muestra_ocultaBlock('interestDetails')">
-            <div class="roundRelleno"> (+)</div>
+        <div class="titleContainer" id="titleContainer4" onclick="muestra_oculta('interestDetails')">
+            <div class="roundRelleno icon-plus" id="roundRelleno4"></div>
             <h1 class="interestTitle" >PASATIEMPOS</h1>
             <div class="roundTitle"> </div>
         </div>
@@ -290,9 +289,9 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis beatae molestias libero illo, reiciendis dolore, at vero reprehenderit blanditiis quo ea cumque et, sunt autem quos. Cupiditate aliquid dolorum labore?</p>
                 </div>
                 <div class="listaPaises">
-                    <div  class="titleContinentContainer" onclick="muestra_ocultaBlock('africaContainer')">
+                    <div  class="titleContinentContainer"  onclick="muestra_ocultaBlock('africaContainer')">
 
-                        <div class="roundRellenoPais"> (+)</div>
+                        <div class="roundRellenoPais icon-circle-down"> </div>
                         <h3 class="continente" class="tituloAfrica" >Africa</h3>
                         <div class="roundTitlePais"> </div>
                     </div>
@@ -301,7 +300,7 @@
                 </div>
 
                 <div  class="titleContinentContainer" onclick="muestra_ocultaBlock('caribeContainer')">
-                    <div class="roundRellenoPais"> (+)</div>
+                    <div class="roundRellenoPais icon-circle-down"> </div>
                     <h3 class="continente" class="tituloCaribe" >Caribe</h3>
                     <div class="roundTitlePais"> </div>
                 </div>                
@@ -310,7 +309,7 @@
                 </div>
 
                 <div  class="titleContinentContainer" onclick="muestra_ocultaBlock('surAsiaContainer')">
-                    <div class="roundRellenoPais"> (+)</div>
+                    <div class="roundRellenoPais icon-circle-down"> </div>
                     <h3 class="continente" class="tituloSurAsia" >Sur de Asia</h3>
                     <div class="roundTitlePais"> </div>
                 </div>    
@@ -321,7 +320,7 @@
                 </div>
 
                 <div  class="titleContinentContainer" onclick="muestra_ocultaBlock('sudesteContainer')">
-                    <div class="roundRellenoPais"> (+)</div>
+                    <div class="roundRellenoPais icon-circle-down"> </div>
                     <h3 class="continente" class="tituloSudeste" >Sudeste Aisatico</h3>
                     <div class="roundTitlePais"> </div>
                 </div>  
@@ -335,7 +334,7 @@
                 </div>
 
                 <div  class="titleContinentContainer" onclick="muestra_ocultaBlock('oceaniaContainer')">
-                    <div class="roundRellenoPais"> (+)</div>
+                    <div class="roundRellenoPais icon-circle-down"> </div>
                     <h3 class="continente" class="tituloOceania" >Oceanía</h3>
                     <div class="roundTitlePais"> </div>
                 </div>  
@@ -346,7 +345,7 @@
                 </div>
 
                 <div  class="titleContinentContainer" onclick="muestra_ocultaBlock('europaContainer')">
-                    <div class="roundRellenoPais"> (+)</div>
+                    <div class="roundRellenoPais icon-circle-down"> </div>
                     <h3 class="continente" class="tituloEuropa" >Europa</h3>
                     <div class="roundTitlePais"> </div>
                 </div>  
@@ -366,7 +365,7 @@
                 </div>
 
                 <div  class="titleContinentContainer" onclick="muestra_ocultaBlock('medioOrienteContainer')">
-                    <div class="roundRellenoPais"> (+)</div>
+                    <div class="roundRellenoPais icon-circle-down"> </div>
                     <h3 class="continente" class="tituloMedioOriente" >Medio Oriente</h3>
                     <div class="roundTitlePais"> </div>
                 </div>  
@@ -376,7 +375,7 @@
                 </div>
 
                 <div  class="titleContinentContainer" onclick="muestra_ocultaBlock('sudamericaContainer')">
-                    <div class="roundRellenoPais"> (+)</div>
+                    <div class="roundRellenoPais icon-circle-down"> </div>
                     <h3 class="continente" class="tituloSudamerica" >Sudamérica</h3>
                     <div class="roundTitlePais"> </div>
                 </div>  
@@ -394,6 +393,21 @@
         </div>
     </section>
 
+    <section class="Projects">
+        <div class="projectsTitleContainer">
+            <div class="round"></div>
+            <h1 class="projectsTitle"> PROYECTOS </h1>
+        </div>
+
+        <article class="proyecto nulan">
+            <div class="projectsTitleContainer">
+                <div class="round"></div>
+                <h1 class="projectsTitle"> Nulan Yoga </h1>
+            </div>
+
+        </article>
+    </section>
+
     <section class="contact">
 
         
@@ -401,12 +415,17 @@
              <input type="text" placeholder="Déjame tu Email">
              <button>Enviar</button>
         </div>
+
+        <div class="contactTitle">
+            <h2><i class="icon-arrow-left2"></i> Trabejemos juntos <i class="icon-arrow-right2"></i> </h2>
+
+        </div>
             
         <nav class="contactNav">
             <a href=".." target="_blank" class="icon-mail contact-icon"></a>
             <a href="https://m.me/alejandro.santalucia/"  target="_blank" class="icon-facebook2 contact-icon"></a>
             <a href="https://www.instagram.com/ale_by_bondhi/" target="_blank" class="icon-instagram contact-icon"></a>
-            <a href="https://api.whatsapp.com/send?phone=5491162827346" target="_blank" class="icon-whatsapp contact-icon"></a>
+            <a href="https://api.whatsapp.com/send?phone=5491162827346&text=Hola%20Ale.%20Vi%20tu%20portfolio%20en%20la%20web%20y%20me%20interesaría%20que%20estemos%20en%20contacto" target="_blank" class="icon-whatsapp contact-icon"></a>
             
         </nav>
             
