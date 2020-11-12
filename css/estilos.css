@@ -10,6 +10,7 @@
 
 } 
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap');
 
 
 
@@ -67,12 +68,14 @@ header nav li {
     z-index: 10;
     background-color: white;
     
+    
 }
 .hero h1 {
     max-width: 50%;
     font-size: 3.5rem;
     padding: 40px 0px 0px 20px;
     background-color: transparent;
+    font-family: 'Oswald', sans-serif;
 }
 
 .hero h1 span {
@@ -431,6 +434,61 @@ color:  var(--azulOscuro);
 }
 
 
+
+
+.contact {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    background-color: var(--azulOscuro);
+    align-items: center;
+    height: 100px;
+
+}
+
+.dejame-mail{
+ display: block;
+}
+
+.dejame-mail input{
+    display: block;
+    width: 350px;
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid var(--verdeMedio);
+   }
+
+
+.dejame-mail button{
+ display: block;
+ background-color: transparent;
+ font-size: 1rem;
+ padding: 5px 10px;
+ margin: 10px auto;
+ border-radius: 20px;
+ color: white;
+ font-weight: 600;
+ border: 1px solid var(--verdeMedio);
+}
+.dejame-mail button:hover{
+    background-color: white;
+    color: var(--azulOscuro)
+}
+
+
+
+.contact-icon {
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    margin: 0 15px;
+    /* border: solid yellow 1px */
+}
+
+.contact-icon:hover{
+    color: black;
+    opacity: .2;
+}
 
 
 
