@@ -5,7 +5,7 @@
     }
 
 .unlaContainer{
-    padding: 30px 5%;
+    padding: 3% 5%;
 }
 
 .dejame-mail input{
@@ -19,6 +19,25 @@
     font-size: 45px;
 }
 
+/* -----------------------empresa */
+.imagen-empresa{
+    width: 100%;
+    }
+
+
+    /* ------------------------Estudios */
+
+.imgUnlaContainer{
+    margin-right: 5%;
+}
+
+.platziContainer{
+    padding: 5% 10%;
+}
+
+.idiomasContainer{
+    padding: 3% 30%;
+}
 
 }
 
@@ -77,6 +96,89 @@
     align-items: center;
 }
 
+
+/* ---------------------- estudios */
+
+.imgUnlaContainer{
+    width: 150px;
+}
+
+.imgUnla{
+    width: 100%;
+}
+
+.tipo-educacion{
+    font-size: 1rem;
+}
+.educacion-description{
+    font-size: 0.8rem;
+}
+
+
+.platziContainer{
+    justify-content: inherit;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template: "platziDiv platziUl" 
+                    "platziFigure platziUl";
+}
+
+.platziContainer div{
+    grid-area: platziDiv;
+}
+.platziContainer ul{
+    grid-area: platziUl;
+    margin: auto 0;
+}
+.platziContainer figure{
+    grid-area: platziFigure;
+    /* border: solid 1px red; */
+    width: 100%;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.platziContainer img{
+    width: 40%;
+
+}
+
+.idiomasContainer{
+    padding: 5% 20%;
+}
+
+
+/* ------------------ interes */
+.musicaContainer{
+    width: 100%;
+    display: block;
+}
+.musicaTextContainer{
+    width: 100%;
+}
+
+.yogaContainer{
+    width: 100%;
+    display: block;
+}
+.yogaTextContainer{
+    width: 100%; 
+}
+
+.paisesContainer{
+    width: 100%;
+    display: block;
+}
+.paisesTextContainer{
+    width: 100%; 
+}
+
+
+.bandera {
+    width: 170px;
+    margin: 0 auto;
+}
+
 }
 
 @media screen and (max-width: 480px){
@@ -99,7 +201,7 @@
     font-size: 1rem;
 }
 
-.aboutMeDetails {
+.aboutMeDetailsGrid {
     display: block;
 }
 
@@ -107,6 +209,95 @@
     font-size: .8rem;
 }
 
+
+/* ------------------empresa */
+
+
+.empresaContainer{
+    display: block;
+}
+
+.detalle-empresa{
+    width: 100%;
+}
+
+.titulo-empresa{
+    font-size: 1.2rem;
+}
+.subtitulo-empresa{
+    font-size: .7rem;
+}
+
+.posicion-empresa{
+    font-size: 1rem;
+}
+
+.fecha-empresa{
+    font-size: .7rem;
+}
+
+.puesto-empresa{
+    font-size: .8rem
+}
+
+.titulo-empresaViajando{
+    font-size: 1rem;
+}
+.posicion-empresaViajando{
+    font-size: .8rem
+}
+
+
+
+
+
+.imagen-empresaContainer{
+    max-width: 100%;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-empresa{
+    width: 85%;
+    }
+
+/* -----------------------estudios */
+
+.unlaContainer {
+    padding: 5% 5%;
+}
+
+.platziContainer{
+    padding: 5% 5%;
+}
+
+.platziContainer ul{
+    font-size: .8rem;
+}
+
+
+.idiomasContainer ul{
+    font-size: .8rem;
+}
+
+/* -------------------------interes */
+
+.musicaImgContainer{
+    width: 100%;
+}
+.musicaTextContainer{
+    padding: 0;
+}
+
+.yogaImgContainer{
+    width: 100%;
+}
+
+.bandera {
+    width: 100px;
+    margin: 0 auto;
+}
 
 }
 
@@ -137,6 +328,84 @@
 
 .titleContainer h1 {
     font-size: .8rem;
+}
+
+
+/* --------------------------experiencia */
+.titulo-empresa{
+    font-size: 1rem;
+}
+.subtitulo-empresa{
+    font-size: .6rem;
+}
+
+.posicion-empresa{
+    font-size: .8rem;
+}
+
+.fecha-empresa{
+    font-size: .6rem;
+}
+
+.puesto-empresa{
+    font-size: .7rem
+}
+
+.titulo-empresaViajando{
+    font-size: .8rem;
+}
+.posicion-empresaViajando{
+    font-size: .6rem
+}
+
+
+/* ----------------------- estidio */
+.unlaContainer{
+    display: block  ;
+}
+.imgUnlaContainer{
+    margin: 0 auto;
+}
+
+.platziContainer{
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template: "platziDiv " 
+                    "platziFigure "
+                    "platziUl";
+}
+
+.platziContainer div{
+    margin-bottom: 5%;
+}
+.platziContainer ul{
+    padding-left: 10%;
+}
+.platziContainer figure{
+
+margin-bottom: 5%;
+}
+
+.idiomasContainer{
+    display: block;
+}
+
+.idiomasContainer .tipo-educacion{
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+/* -------------------------interes */
+.interesTitle {
+    font-size: 1rem;
+}
+.interest p{
+    font-size: .8rem;
+}
+
+.paisesContainer{
+    padding: 10% 0 0 0;
 }
 
 }

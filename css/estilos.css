@@ -156,10 +156,14 @@ h1  {
 
 /* -------------------------- about me */
 
-.aboutMeDetails {
+.aboutMeDetails{
+    display: none;
+}
+
+.aboutMeDetailsGrid {
     padding: 10px 20px;
     background-color: var(--VerdeBackground);
-    display: none;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "aboutMeImgContainer  aboutMeText";
     /* margin: 0 30px; */
