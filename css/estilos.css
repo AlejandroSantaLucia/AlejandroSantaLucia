@@ -499,6 +499,13 @@ color:  var(--azulOscuro);
 
 }
 
+.contactContainer{
+    display: inherit;
+    width: inherit;
+    padding: inherit;
+    height: inherit;
+}
+
 .dejame-mail{
  display: block;
 }

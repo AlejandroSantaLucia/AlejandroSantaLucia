@@ -163,6 +163,7 @@
 }
 .yogaTextContainer{
     width: 100%; 
+    padding: 0 10% 10% 10%;
 }
 
 .paisesContainer{
@@ -179,6 +180,42 @@
     margin: 0 auto;
 }
 
+/* ---------------------------- contacto */
+
+.contact{
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template: " . contactTitle . "
+                    " . dejame-mail ."
+                    " . contactNav .";
+    height: inherit;
+
+}
+
+.dejame-mail{
+    grid-area: dejame-mail;
+    /* margin: 0 auto 10% ; */
+    margin-bottom: 10%;
+    
+}
+
+.contactTitle{
+    grid-area: contactTitle;
+    margin: 10% auto
+}
+
+.contactTitle i {
+    display: none;
+}
+
+.contactNav {
+    grid-area: contactNav;
+    margin-bottom: 10% ;
+}
+
+
+
 }
 
 @media screen and (max-width: 480px){
@@ -193,7 +230,7 @@
 
 
 .heroImgContainer {
-    width: 400px;
+    width: 90%;
 }
 
 
@@ -298,6 +335,27 @@
     width: 100px;
     margin: 0 auto;
 }
+
+/* ----------------------------- contact */
+
+.dejame-mail input {
+
+    width: 100%;
+    margin: 0 auto;
+    /* max-width: 300px; */
+    
+}
+
+.contactNav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-icon{
+    font-size: 35px;
+    margin: 0 10px;
+}
+
 
 }
 
