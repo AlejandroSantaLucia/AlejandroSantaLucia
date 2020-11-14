@@ -32,8 +32,8 @@ header {
 }
 .headerContainer {
     width: 100%;
-    display: inherit;
-    justify-content: inherit;
+    display: flex;
+    justify-content: space-between;
     
     align-items: center;
 }
@@ -46,19 +46,43 @@ header figure img {
     height: 100%;
 }
 
+.navContainer{
+    width: 250px;
+    
+}
 
 header nav ul {
-    
+    width: 100%;
     list-style: none;
     display: flex;
+    text-decoration: none;
+    justify-content: space-around;
+
+}
     
+
+.navButton {
+    /* margin-left: 10px; */
+    background-color: var(--azulOscuro);
+    
+    padding: 5%;
+    border-radius: 10px;
+
 }
 
-header nav li {
-    margin-left: 10px;
-    border: solid 1px green
+.navButton:hover {
+    /* margin-left: 10px; */
+    background-color: var(--verdeFuerte);
+    
+        
 }
 
+
+.navButton a {
+   text-decoration: none;
+   color: white;
+
+}
 
 
 /* ----------------------------------------- hero */

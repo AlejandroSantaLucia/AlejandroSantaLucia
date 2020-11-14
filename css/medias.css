@@ -220,6 +220,23 @@
 
 @media screen and (max-width: 480px){
 
+.headerContainer {
+    display: block;
+}
+
+.headerContainer figure{
+   display: flex;
+   justify-content: center;
+   margin: 5%;
+}
+
+.navContainer {
+    margin: 0 auto
+}
+
+
+/* --------------------------hero */
+
 .hero {
     min-height: 410px;
 }
@@ -338,6 +355,11 @@
 
 /* ----------------------------- contact */
 
+
+.contactTitle {
+    font-size: .8rem;
+}
+
 .dejame-mail input {
 
     width: 100%;
@@ -357,6 +379,12 @@
 }
 
 
+/* -----------------------------------footer */
+
+
+.footer{
+    font-size: .7rem;
+}
 }
 
 @media screen and (max-width: 320px){
@@ -464,6 +492,12 @@ margin-bottom: 5%;
 
 .paisesContainer{
     padding: 10% 0 0 0;
+}
+
+/* ---------------------- footer */
+
+..footer{
+    font-size: .5rem;
 }
 
 }
