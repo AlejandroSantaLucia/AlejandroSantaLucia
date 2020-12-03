@@ -485,6 +485,13 @@ color:  var(--azulOscuro);
     height: 100vh;
 }
 
+.projectsTitleSection {
+    text-align:center;
+    font-size: 2rem;
+    margin-top: 10%;
+}
+
+
 .projectsTitleContainer{
     display: flex;
     align-items: center;
@@ -505,7 +512,27 @@ color:  var(--azulOscuro);
 }
 
 
+.projectDetail{
+display: flex;
+width: 90%;
+margin: auto;
+}
 
+.projectText{
+    width: 50%;
+}
+
+.projectDescription , .projectRuta{
+    margin: 10%
+}
+
+.projectImagen{
+    width: 50%;
+}
+.projectImagen iframe{
+    width: 100%;
+    height: 250px;
+}
 
 
 
