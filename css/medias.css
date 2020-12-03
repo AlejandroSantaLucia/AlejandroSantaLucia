@@ -277,22 +277,22 @@
 
 .titulo-empresa{
     font-size: 1.2rem;
-}
+} /*h2*/
 .subtitulo-empresa{
     font-size: .7rem;
-}
+}/*h5*/
 
 .posicion-empresa{
     font-size: 1rem;
-}
+}/*h3*/
 
 .fecha-empresa{
     font-size: .7rem;
-}
+}/*h5*/
 
 .puesto-empresa{
     font-size: .8rem
-}
+}/*p*/
 
 .titulo-empresaViajando{
     font-size: 1rem;
@@ -352,6 +352,38 @@
     width: 100px;
     margin: 0 auto;
 }
+
+
+/* ---------------------------- Proyectos */
+
+.projectDetail{
+    display: block;
+}
+
+.projectText{
+    width: 90%;
+}
+
+.projectImagen{
+    width: 90%;
+    margin: 0 auto
+
+}
+
+.Projects h1 {
+    font-size: 1.8rem;
+}
+.Projects h3 {
+    font-size: 1rem;
+}
+.Projects li, .Projects p {
+    font-size: .8rem;
+}
+
+
+
+
+
 
 /* ----------------------------- contact */
 

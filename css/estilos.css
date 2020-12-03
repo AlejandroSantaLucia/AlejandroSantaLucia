@@ -480,15 +480,17 @@ color:  var(--azulOscuro);
 /* -------------- proyectos */
 
 .Projects {
-    /* background: var(--VerdeBackground); */
+    border-bottom: var(--verdeClaro) 1px solid;
+    padding-bottom: 10%;
+    margin-bottom: 10%;
 
-    height: 100vh;
 }
 
 .projectsTitleSection {
     text-align:center;
     font-size: 2rem;
     margin-top: 10%;
+    color: var(--azulOscuro)
 }
 
 
@@ -525,14 +527,38 @@ margin: auto;
 .projectDescription , .projectRuta{
     margin: 10%
 }
+.projectDescription h3, .projectRuta h3{
+    color: var(--azulOscuro);
+}
 
+.projectDescription ul{
+    margin: 10% auto;
+}
+ 
 .projectImagen{
     width: 50%;
+
 }
-.projectImagen iframe{
+.projectImgPrincipal{
     width: 100%;
-    height: 250px;
+    
 }
+.projectImgPrincipal img{
+    width: 80%;
+    
+}
+
+.projectImgSecundarias{
+    display: flex;
+}
+
+.projectImgSecundaria {
+    width: 50%;
+}
+.projectImgSecundaria img{
+    width: 90%;
+}
+
 
 
 
