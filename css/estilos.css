@@ -479,12 +479,6 @@ color:  var(--azulOscuro);
 
 /* -------------- proyectos */
 
-.Projects {
-    border-bottom: var(--verdeClaro) 1px solid;
-    padding-bottom: 10%;
-    margin-bottom: 10%;
-
-}
 
 .projectsTitleSection {
     text-align:center;
@@ -493,6 +487,12 @@ color:  var(--azulOscuro);
     color: var(--azulOscuro)
 }
 
+.project {
+    border-bottom: var(--verdeClaro) 1px solid;
+    padding-bottom: 10%;
+    margin-bottom: 10%;
+
+}
 
 .projectsTitleContainer{
     display: flex;
