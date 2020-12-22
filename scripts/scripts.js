@@ -43,6 +43,89 @@ document.getElementById('titleContainer4').addEventListener('click', function(){
     })
 
 
+// ----------- desplegar modal 
+
+const $hideButtom1 = document.getElementById (`hide-modal1`) ;
+const $hideButtom2 = document.getElementById (`hide-modal2`) ;
+const $hideButtom3 = document.getElementById (`hide-modal3`) ;
+const $hideButtom4 = document.getElementById (`hide-modal4`) ;
+const $overlayModal1 = document.getElementById (`overlayModal1`) ;
+const $overlayModal2 = document.getElementById (`overlayModal2`) ;
+const $overlayModal3 = document.getElementById (`overlayModal3`) ;
+const $overlayModal4 = document.getElementById (`overlayModal4`) ;
+const $modal1 = document.getElementById (`modal1`) ;
+const $modal2= document.getElementById (`modal2`) ;
+const $modal3= document.getElementById (`modal3`) ;
+const $modal4= document.getElementById (`modal4`) ;
+const $btnAnimacion1 = document.getElementById (`btnAnimacion1`) ;
+const $btnAnimacion2 = document.getElementById (`btnAnimacion2`) ;
+const $btnAnimacion3 = document.getElementById (`btnAnimacion3`) ;
+const $btnAnimacion4 = document.getElementById (`btnAnimacion4`) ;
+ 
+
+$hideButtom1.addEventListener (`click`, () => {
+    // console.log(event)
+    $modal1.style.animation = `animationOut .8s forwards`;
+    $overlayModal1.classList.remove(`active`)
+})
+
+$btnAnimacion1.addEventListener (`click`, () => {
+    $modal1.style.animation = `animationIn .8s forwards`;
+    overlayModal1.classList.add(`active`)
+})
+ 
+
+$hideButtom2.addEventListener (`click`, () => {
+    // console.log(event)
+    $modal2.style.animation = `animationOut .8s forwards`;
+    $overlayModal2.classList.remove(`active`)
+})
+
+$btnAnimacion2.addEventListener (`click`, () => {
+    $modal2.style.animation = `animationIn .8s forwards`;
+    overlayModal2.classList.add(`active`)
+})
 
 
-        
+$hideButtom3.addEventListener (`click`, () => {
+    // console.log(event)
+    $modal3.style.animation = `animationOut .8s forwards`;
+    $overlayModal3.classList.remove(`active`)
+})
+
+$btnAnimacion3.addEventListener (`click`, () => {
+    $modal3.style.animation = `animationIn .8s forwards`;
+    overlayModal3.classList.add(`active`)
+})
+
+
+$hideButtom4.addEventListener (`click`, () => {
+    // console.log(event)
+    $modal4.style.animation = `animationOut .8s forwards`;
+    $overlayModal4.classList.remove(`active`)
+})
+
+$btnAnimacion4.addEventListener (`click`, () => {
+    $modal4.style.animation = `animationIn .8s forwards`;
+    overlayModal4.classList.add(`active`)
+})
+
+
+
+
+
+
+
+
+
+
+
+// ------------------------ animacion $animacionLogo
+
+const $animacionLogo = document.getElementById (`animacionLogo`)
+
+$animacionLogo.addEventListener (`click`, (event) =>{
+    console.log(event)
+       $animacionLogo.classList.toggle(`is-click`);
+
+})

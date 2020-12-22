@@ -498,6 +498,7 @@ color:  var(--azulOscuro);
     display: flex;
     align-items: center;
     margin: 40px;
+    color: var(--azulOscuro);
 }
 
 .round{
@@ -507,8 +508,12 @@ color:  var(--azulOscuro);
     height: 70px;
  }
 
+ .projectsTitleTexts {
+     line-height: 1rem;
+ }
+
 .projectsTitle {
-    color: var(--azulOscuro);
+    
     margin-left: -60px;
     font-size: 2rem;
 }
@@ -559,9 +564,67 @@ margin: auto;
     width: 90%;
 }
 
+/* -------------------- botonera modal */
+
+.btn {
+    text-align: center;
+    background-color: var(--verdeMedio);
+    padding: .6em .8em .8em;
+    border: none;
+    color: var(--azulOscuro);
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: inset 0 -.2em rgba(0, 0, 0, .2);
+    outline: 0;
+    transition: .2s;
+}
+.btn:active {
+    transform: scale(.9);
+}
+
+.overlayModal {
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s; 
+    opacity: 0;
+    visibility: hidden;
+    z-index: 21;
+}
+.overlayModal.active {
+    opacity: 1;
+    visibility: visible;}
+
+.modal{
+    max-width: 500px;
+    background-color: white;
+    padding: 2em;
+    border-radius: .5em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}    
 
 
 
+/* ---------------- */
+
+.animacionLogo{
+    width: 200px;
+    height: 200px;
+    background-image: url("../imagenes/logoGrande.png");
+    cursor: pointer;
+}
 
 
 /* ----------- contacto */
