@@ -605,7 +605,8 @@ margin: auto;
 .modal{
     max-width: 500px;
     background-color: white;
-    padding: 2em;
+    color: var(--azulOscuro);
+    padding: 1em;
     border-radius: .5em;
     text-align: center;
     display: flex;
@@ -625,6 +626,181 @@ margin: auto;
     background-image: url("../imagenes/logoGrande.png");
     cursor: pointer;
 }
+
+
+/* ---------------- */
+.animacionBolaContainer {
+    border: 1px solid var(--azulOscuro);
+    width: 100%;
+}
+
+
+.animacionBola{
+    width: 50px;
+    height: 50px;
+    background-color: var(--verdeMedio);
+    background: radial-gradient(at top left , var(--verdeMedio) 10%, var(--verdeFuerte));
+    margin: 20px 0;
+    transition: .3s;
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ----------------------- */
+
+.bellContainer{
+    position: relative;
+    padding: 10%;
+}
+
+.icon-bell:before {
+    content: "\e951";
+    display: block;
+    color: rgb(184, 159, 159);
+    width: 50px;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:   relative;
+    font-size: 2rem;
+    
+    transform-origin: center top;
+  }
+
+
+.icon-bell::after{
+    content: attr(data-count);
+    opacity: 0;
+    transition: .3s;
+    transform: scale(.5);
+
+    /* will-change: opacity, transform; */
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 25px;
+    height: 25px;
+
+    background: #ff4600;
+    border-radius: 50%;
+
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    right: 5%;
+    top:  5%;
+}
+
+
+.icon-bell.show-count:after{
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
+.btn.send-notification {
+    border-radius: 50%;
+    background-color: var(--verdeClaro);
+    height: 100px;
+    width: 100px;
+}
+
+
+
+
+/* ------------------------ */
+
+.containerWaves  {
+    position: relative;
+    height: 400px;
+    background: #0f9bf6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentWaves {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2em;
+    color: rgba(255, 255,255,.8);
+}
+
+.waves {
+    position: absolute;
+    /* left: 0;
+    right: 0;
+    height: 200px; */
+    bottom: -135px;
+    height: 527px;
+    width: 100%;    
+    overflow: hidden;
+
+}
+
+
+.wave{
+    width: 2402px;
+    height: 427px;
+    left: -180px;
+    bottom: 0;
+    /* border-radius: 50%; */
+
+    /* background: rgba(0, 0, 0, .3); */
+    background: url("../imagenes/waves.png") center bottom no-repeat;
+    position: absolute;
+    animation: 5s wave ease-in-out infinite alternate;
+}
+
+
+
+.wave.a{
+    background-position: 0 -854px;
+    
+}
+.wave.b{
+    animation-delay: .6s;
+    background-position: 0 -427px;
+
+    
+}
+.wave.c{
+    animation-delay: 1.2s;
+    background-position: 0 0;
+
+}
+
+
+
+ @keyframes wave {
+     0%{
+        transform: translateX(0) translateY(0);         
+     }
+     50%{
+        transform: translateX(-80px) translateY(30px);         
+
+     }
+     100%{
+        transform: translateX(160px) translateY(-60px);         
+
+     }
+ }
+
+
+
+
+
+
 
 
 /* ----------- contacto */

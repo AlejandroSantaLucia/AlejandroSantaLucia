@@ -101,6 +101,76 @@
 
 
 
+.animacionBola{
+  animation-name: movimiento, rebote;
+  animation-duration: 3s, .3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear, ease-in-out;
+}
+
+
+@keyframes movimiento{
+  0% {
+      left: 0%;
+  }
+  100%{
+      left: calc(100% - 50px);
+  }
+}
+
+@keyframes rebote{
+  0%{
+      transform:translateY(-50%) ;
+  }
+  100% {
+      transform: translateY(50%) scale(1.1, .9);
+  }
+}
+
+
+
+
+
+.icon-bell.notify:before {
+  animation-name: bell;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes bell {
+  0% {
+      transform: rotate(35deg);
+  }
+
+  12.5% {
+      transform: rotate(-30deg);
+  }
+  25% {
+      transform: rotate(25deg);
+  }
+  37.5% {
+      transform: rotate(-20deg);
+  }
+  50% {
+      transform: rotate(15deg);
+  }
+  62.5% {
+      transform: rotate(-10deg);
+  }
+  75% {
+      transform: rotate(5deg);
+  }
+
+  100% {
+      transform: rotate(0deg);
+  }
+}
+
+
+
+
+
 
 
 

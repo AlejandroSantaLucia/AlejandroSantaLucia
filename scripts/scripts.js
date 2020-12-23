@@ -125,7 +125,27 @@ $btnAnimacion4.addEventListener (`click`, () => {
 const $animacionLogo = document.getElementById (`animacionLogo`)
 
 $animacionLogo.addEventListener (`click`, (event) =>{
-    console.log(event)
+    // console.log(event)
        $animacionLogo.classList.toggle(`is-click`);
 
 })
+
+
+
+
+
+const $notificatoinButton = document.getElementById (`notificatoinButton`);
+const $bell = document.getElementById (`notification`);
+
+
+
+$notificatoinButton.addEventListener (`click`, () =>{
+    const count = Number($bell.getAttribute(`data-count`)) || 0; 
+    $bell.setAttribute(`data-count`, count + 1); 
+    $bell.classList.add(`show-count`)  
+    $bell.classList.add(`notify`) 
+})
+
+$bell.addEventListener(`animationend`, () => {
+    $bell.classList.remove (`notify`)
+}) 
