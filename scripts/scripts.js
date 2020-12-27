@@ -49,18 +49,22 @@ const $hideButtom1 = document.getElementById (`hide-modal1`) ;
 const $hideButtom2 = document.getElementById (`hide-modal2`) ;
 const $hideButtom3 = document.getElementById (`hide-modal3`) ;
 const $hideButtom4 = document.getElementById (`hide-modal4`) ;
+const $hideButtom5 = document.getElementById (`hide-modal5`) ;
 const $overlayModal1 = document.getElementById (`overlayModal1`) ;
 const $overlayModal2 = document.getElementById (`overlayModal2`) ;
 const $overlayModal3 = document.getElementById (`overlayModal3`) ;
 const $overlayModal4 = document.getElementById (`overlayModal4`) ;
+const $overlayModal5 = document.getElementById (`overlayModal5`) ;
 const $modal1 = document.getElementById (`modal1`) ;
 const $modal2= document.getElementById (`modal2`) ;
 const $modal3= document.getElementById (`modal3`) ;
 const $modal4= document.getElementById (`modal4`) ;
+const $modal5= document.getElementById (`modal5`) ;
 const $btnAnimacion1 = document.getElementById (`btnAnimacion1`) ;
 const $btnAnimacion2 = document.getElementById (`btnAnimacion2`) ;
 const $btnAnimacion3 = document.getElementById (`btnAnimacion3`) ;
 const $btnAnimacion4 = document.getElementById (`btnAnimacion4`) ;
+const $btnAnimacion5 = document.getElementById (`btnAnimacion5`) ;
  
 
 $hideButtom1.addEventListener (`click`, () => {
@@ -108,6 +112,17 @@ $hideButtom4.addEventListener (`click`, () => {
 $btnAnimacion4.addEventListener (`click`, () => {
     $modal4.style.animation = `animationIn .8s forwards`;
     overlayModal4.classList.add(`active`)
+})
+
+$hideButtom5.addEventListener (`click`, () => {
+    // console.log(event)
+    $modal5.style.animation = `animationOut .8s forwards`;
+    $overlayModal5.classList.remove(`active`)
+})
+
+$btnAnimacion5.addEventListener (`click`, () => {
+    $modal5.style.animation = `animationIn .8s forwards`;
+    overlayModal5.classList.add(`active`)
 })
 
 

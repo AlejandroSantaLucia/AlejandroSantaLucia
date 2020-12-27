@@ -1,7 +1,7 @@
 :root  {
 --verdeFuerte: #008037;
---verdeMedio: #7ED957;
---verdeClaro: #C9E265;
+--verdeMedio: #7ed957;
+--verdeClaro: #c9e265;
 
 --VerdeBackground: #e1ecb1;
 
@@ -765,7 +765,7 @@ margin: auto;
     /* background: rgba(0, 0, 0, .3); */
     background: url("../imagenes/waves3.png") center bottom no-repeat;
     position: absolute;
-    animation: 5s wave ease-in-out infinite alternate;
+    
 }
 
 
@@ -788,23 +788,162 @@ margin: auto;
 
 }
 
+/* -------------------- */
+
+.atomoContainer {
+    height: 350px;
+    width:  350px;
+
+    background-color: rgb(23, 23, 26);
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nucleoAtomo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--verdeClaro);
+    box-shadow: 0px 0px 50px 50px rgba(201, 226, 101, 0.5);
+}
+
+.radio {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px var(--verdeMedio) solid;
+    position: absolute;
+    box-shadow: 0px 0px 30px 30px rgba(126, 217, 87, 0.5), inset 0px 0px 30px 30px rgba(126, 217, 87, 0.5) ;
+    
+
+}
+
+/* (201, 226, 101, 0.5) */
 
 
- @keyframes wave {
-     0%{
-        transform: translateX(0) translateY(0);         
-     }
-     50%{
-        /* transform: translateX(-80px) translateY(30px);          */
-        transform: translateX(-40px) translateY(20px);         
+.radio.a{
 
-     }
-     100%{
-        /* transform: translateX(160px) translateY(-60px);          */
-        transform: translateX(80px) translateY(-30px);         
+    animation-name: radioAanimation;
+    animation-duration: 10s; 
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+.radio.b{
+    transform: rotateX(30deg) rotateZ(30deg);
 
-     }
- }
+    animation-name: radioBanimation;
+    animation-duration: 10s; 
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.radio.c{
+    transform: rotateX(60deg) rotateZ(60deg);
+
+    animation-name: radioCanimation;
+    animation-duration: 10s; 
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.radio.d{
+    transform: rotateX(90deg) rotateZ(90deg);
+
+    animation-name: radioDanimation;
+    animation-duration: 10s; 
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.radio.e{
+    transform: rotateX(120deg) rotateZ(120deg);
+
+    animation-name: radioEanimation;
+    animation-duration: 10s; 
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.radio.f{
+    transform: rotateX(150deg) rotateZ(150deg);
+
+    animation-name: radioFanimation;
+    animation-duration: 10s; 
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes radioAanimation {
+
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+
+
+}
+@keyframes radioBanimation {
+
+    0% {
+        transform: rotateX(30deg) rotateY(30deg);
+    }
+
+    100% {
+        transform: rotateX(390deg) rotateY(390deg);
+    }
+
+}
+@keyframes radioCanimation {
+
+    0% {
+        transform: rotateX(60deg) rotateY(60deg);
+    }
+
+    100% {
+        transform: rotateX(420deg) rotateY(420deg);
+    }
+
+}
+@keyframes radioDanimation {
+
+    0% {
+        transform: rotateX(90deg) rotateY(90deg);
+    }
+
+    100% {
+        transform: rotateX(450deg) rotateY(450deg);
+    }
+
+} 
+@keyframes radioEanimation {
+
+    0% {
+        transform: rotateX(120deg) rotateY(120deg);
+    }
+
+    100% {
+        transform: rotateX(480deg) rotateY(480deg);
+    }
+
+} 
+@keyframes radioFanimation {
+
+    0% {
+        transform: rotateX(150deg) rotateY(150deg);
+    }
+
+    100% {
+        transform: rotateX(510deg) rotateY(510deg);
+    }
+
+} 
 
 
 

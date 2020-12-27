@@ -169,6 +169,25 @@
 
 
 
+.wae {
+  animation: 5s wave ease-in-out infinite alternate;
+}
+
+@keyframes wave {
+  0%{
+     transform: translateX(0) translateY(0);         
+  }
+  50%{
+     /* transform: translateX(-80px) translateY(30px);          */
+     transform: translateX(-40px) translateY(20px);         
+
+  }
+  100%{
+     /* transform: translateX(160px) translateY(-60px);          */
+     transform: translateX(80px) translateY(-30px);         
+
+  }
+}
 
 
 
