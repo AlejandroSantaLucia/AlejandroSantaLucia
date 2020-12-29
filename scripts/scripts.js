@@ -50,21 +50,25 @@ const $hideButtom2 = document.getElementById (`hide-modal2`) ;
 const $hideButtom3 = document.getElementById (`hide-modal3`) ;
 const $hideButtom4 = document.getElementById (`hide-modal4`) ;
 const $hideButtom5 = document.getElementById (`hide-modal5`) ;
+const $hideButtom6 = document.getElementById (`hide-modal6`) ;
 const $overlayModal1 = document.getElementById (`overlayModal1`) ;
 const $overlayModal2 = document.getElementById (`overlayModal2`) ;
 const $overlayModal3 = document.getElementById (`overlayModal3`) ;
 const $overlayModal4 = document.getElementById (`overlayModal4`) ;
 const $overlayModal5 = document.getElementById (`overlayModal5`) ;
+const $overlayModal6 = document.getElementById (`overlayModal6`) ;
 const $modal1 = document.getElementById (`modal1`) ;
 const $modal2= document.getElementById (`modal2`) ;
 const $modal3= document.getElementById (`modal3`) ;
 const $modal4= document.getElementById (`modal4`) ;
 const $modal5= document.getElementById (`modal5`) ;
+const $modal6= document.getElementById (`modal6`) ;
 const $btnAnimacion1 = document.getElementById (`btnAnimacion1`) ;
 const $btnAnimacion2 = document.getElementById (`btnAnimacion2`) ;
 const $btnAnimacion3 = document.getElementById (`btnAnimacion3`) ;
 const $btnAnimacion4 = document.getElementById (`btnAnimacion4`) ;
 const $btnAnimacion5 = document.getElementById (`btnAnimacion5`) ;
+const $btnAnimacion6 = document.getElementById (`btnAnimacion6`) ;
  
 
 $hideButtom1.addEventListener (`click`, () => {
@@ -123,6 +127,17 @@ $hideButtom5.addEventListener (`click`, () => {
 $btnAnimacion5.addEventListener (`click`, () => {
     $modal5.style.animation = `animationIn .8s forwards`;
     overlayModal5.classList.add(`active`)
+})
+
+$hideButtom6.addEventListener (`click`, () => {
+    // console.log(event)
+    $modal6.style.animation = `animationOut .8s forwards`;
+    $overlayModal6.classList.remove(`active`)
+})
+
+$btnAnimacion6.addEventListener (`click`, () => {
+    $modal6.style.animation = `animationIn .8s forwards`;
+    overlayModal6.classList.add(`active`)
 })
 
 

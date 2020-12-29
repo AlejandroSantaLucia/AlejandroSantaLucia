@@ -169,7 +169,7 @@
 
 
 
-.wae {
+.wave {
   animation: 5s wave ease-in-out infinite alternate;
 }
 
@@ -189,6 +189,314 @@
   }
 }
 
+
+
+
+
+
+
+.radio.a{
+
+  animation-name: radioAanimation;
+  animation-duration: 10s; 
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  
+}
+.radio.b{
+  transform: rotateX(30deg) rotateZ(30deg);
+
+  animation-name: radioBanimation;
+  animation-duration: 10s; 
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.radio.c{
+  transform: rotateX(60deg) rotateZ(60deg);
+
+  animation-name: radioCanimation;
+  animation-duration: 10s; 
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.radio.d{
+  transform: rotateX(90deg) rotateZ(90deg);
+
+  animation-name: radioDanimation;
+  animation-duration: 10s; 
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.radio.e{
+  transform: rotateX(120deg) rotateZ(120deg);
+
+  animation-name: radioEanimation;
+  animation-duration: 10s; 
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.radio.f{
+  transform: rotateX(150deg) rotateZ(150deg);
+
+  animation-name: radioFanimation;
+  animation-duration: 10s; 
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+
+@keyframes radioAanimation {
+
+  0% {
+      transform: rotateX(0deg) rotateY(0deg);
+  }
+
+  100% {
+      transform: rotateX(360deg) rotateY(360deg);
+  }
+
+
+}
+@keyframes radioBanimation {
+
+  0% {
+      transform: rotateX(30deg) rotateY(30deg);
+  }
+
+  100% {
+      transform: rotateX(390deg) rotateY(390deg);
+  }
+
+}
+@keyframes radioCanimation {
+
+  0% {
+      transform: rotateX(60deg) rotateY(60deg);
+  }
+
+  100% {
+      transform: rotateX(420deg) rotateY(420deg);
+  }
+
+}
+@keyframes radioDanimation {
+
+  0% {
+      transform: rotateX(90deg) rotateY(90deg);
+  }
+
+  100% {
+      transform: rotateX(450deg) rotateY(450deg);
+  }
+
+} 
+@keyframes radioEanimation {
+
+  0% {
+      transform: rotateX(120deg) rotateY(120deg);
+  }
+
+  100% {
+      transform: rotateX(480deg) rotateY(480deg);
+  }
+
+} 
+@keyframes radioFanimation {
+
+  0% {
+      transform: rotateX(150deg) rotateY(150deg);
+  }
+
+  100% {
+      transform: rotateX(510deg) rotateY(510deg);
+  }
+
+} 
+
+
+
+
+
+.payaso:hover .payaso__nariz{
+  animation-name: ColorNariz;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes ColorNariz {
+  0% {
+      background-color: blue;
+  }
+  20% {
+      background-color: green;
+  }
+  40% {
+      background-color: yellow;
+  }
+  60% {
+      background-color: violet;
+  }
+  80% {
+      background-color: red;
+  }
+}
+
+
+.payaso:hover .payaso__menton{
+  animation-name: tamanoMenton;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes tamanoMenton{
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.2, 1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.payaso:hover .payaso__mentonBoca {
+  animation-name: MuecaBoca;
+  animation-duration: .2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes MuecaBoca {
+
+  0% {width: 170px;
+      height: 50px;
+      
+
+  }
+  20%{
+      right: 60px;
+
+  }
+  40%{
+      right: 70px;
+  }
+  60%{
+      right: 80px;
+  }
+  80%{
+      right: 90px;
+  }
+
+  100% {
+      width: 50px;
+      height: 40px;
+      background-color: black;
+      right: 100px;
+
+}}
+
+
+.payaso:hover .payaso__cabeza, .payaso__orejaIzquierda, .payaso__orejaDerecha{
+
+  animation-name: CambiaCabeza;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes CambiaCabeza {
+  0%{
+
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100%{
+      background-color: rgb(233, 172, 153);
+      transform: scale(1.1);
+  }
+}
+
+
+.payaso:hover .payaso__cejaIzquierda{
+  animation-name: cejaIzquierda;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cejaIzquierda {
+  0%{
+
+  }
+  100% {
+      transform: scale(1.6) translateY(10px) translateX(-5px);
+  }
+}
+
+.payaso:hover .payaso__cejaDerecha{
+  animation-name: cejaDerecha;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cejaDerecha {
+  0%{
+
+  }
+  100% {
+      transform: scale(1.6, 1.6) translateY(20px) translateX(5px) rotateZ(-26deg);
+  }
+}
+
+
+.payaso:hover .payaso__ojosContainer{
+  animation-name: TamanoOjos;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes TamanoOjos{
+  0%{
+
+  }
+  100% {
+      transform: scale(1.2);
+  }
+}
+
+
+.payaso:hover .payaso__ojos--pupilaIzquierda, .payaso__ojos--pupilaDerecha{
+
+  animation-name: PosicionPupila;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes PosicionPupila{
+  0%{
+
+  }
+  100%{
+      transform: translateY(-10px);
+  }
+}
+
+
+.payaso:hover .payaso__mono{
+  animation-name: GiroMono;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes GiroMono{
+  100% {
+      transform: rotateZ(360deg);
+  }
+}
 
 
 
